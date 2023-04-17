@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(7, 7, 7);
+  background-image: linear-gradient(315deg, rgb(148, 154, 201) 15%, #90b5cc);
+}
+
+.underline {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 100px;
+  height: 4px;
+  background-color: #142885;
+}
+
+.customer-form {
+  margin-bottom: 30px;
+}
+.customer-form h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #171718;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.customer-form p {
+  font-size: 22px;
+  font-weight: bolder;
+  color: #171718;
+}
+.customer-form p span {
+  font-weight: lighter;
+  margin-left: 8px;
+}
+.customer-form img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.addition {
+  position: relative;
+  background-image: url("../img/additions/porsche-g5ad665189_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.addition h2 {
+  color: lightgray;
+  text-transform: uppercase;
+}
+.addition .addition-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+.addition .card-group {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.addition .card-group .card {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.addition .card-group img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.addition h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: lightgray;
+}
+
+.form-wrapper {
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-wrapper h2 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.form-wrapper .finance-input {
+  margin: 5px;
+}
+
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(90, 28, 28);
+}
+
+.order-panel {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 0;
+  width: 1000px;
+  background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+  color: aliceblue;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+.order-panel h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(217, 219, 221);
+  text-transform: uppercase;
+}
+.order-panel .underline {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 150px;
+  height: 4px;
+  background-color: #8fa6f1;
+}
+.order-panel .car2 {
+  font-size: 20px;
+}
+.order-panel .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.order-panel hr {
+  margin-top: 40px;
+}
+.order-panel .date-label {
+  background-color: inherit;
+  color: rgb(217, 219, 221);
+  letter-spacing: 2px;
+}
+.order-panel .date-label p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.order-panel .date-label p span {
+  font-weight: lighter;
+  margin-left: 8px;
+}
+.order-panel i {
+  margin-top: 40px;
+  font-size: 50px;
+}/*# sourceMappingURL=form.css.map */

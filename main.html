@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARY! Gdzie moja bryka?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./sass/main.css">
+
+
+    <script src="https://kit.fontawesome.com/27ec2ad323.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0">
+        <div class="container">
+            <a class="navbar-brand">STARY! Gdzie moja bryka?</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#aboutus">o nas</a>
+                    <a class="nav-link" href="#cars">auta</a>
+                    <a class="nav-link" href="#opinion">opinie</a>
+                    <a class="nav-link" href="#contact">kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <header>
+        <div class="hero-img">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1>Stary! Gdzie moja bryka?</h1>
+                <p>Z nami znajdziesz swoje auto</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutus" class="aboutus py-5">
+            <div class="container">
+                <h2>o nas</h2>
+                <div class="underline"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 aboutus-hover">
+                        <p><i class="fa-solid fa-user-shield"></i></p>
+                        <p class="aboutus-card-title mb-1">Bezpieczeństwo</p>
+                        <p class="aboutus-card-text">Oferujemy tylko sprawne, bezwypadkowe pojazdy</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 aboutus-hover">
+                        <p><i class="fa-solid fa-seedling"></i></p>
+                        <p class="aboutus-card-title mb-1">Środowisko</p>
+                        <p class="aboutus-card-text">Dbamy o najwyższe standardy jakości oferowanych aut</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 aboutus-hover">
+                        <p><i class="fa-solid fa-handshake"></i></p>
+                        <p class="aboutus-card-title mb-1">Najwyższe standardy</p>
+                        <p class="aboutus-card-text">Oferujemy obsługę ekspertów oraz pełen wgląd do historii pojazdów
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 aboutus-hover">
+                        <p><i class="fa-solid fa-truck-fast"></i></p>
+                        <p class="aboutus-card-title mb-1">Szybkość</p>
+                        <p class="aboutus-card-text">Gwarantujemy szybkie i terminowe dostawy</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 aboutus-hover">
+                        <p><i class="fa-solid fa-phone-volume"></i></p>
+                        <p class="aboutus-card-title mb-1">Kontakt</p>
+                        <p class="aboutus-card-text">Jesteśmy gotowi odpowiedzieć na każde pytania</p>
+                    </div>
+                    <div class="col-sm-6 col-md-4 aboutus-hover">
+                        <p><i class="fa-solid fa-car"></i></p>
+                        <p class="aboutus-card-title mb-1">Kochamy auta</p>
+                        <p class="aboutus-card-text">Robimy wszystko, aby znaleźć dla Was niezawodną brykę</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="input py-5">
+        <div class="input_container">
+            <label>Znajdź mnie!</label>
+            <input id="search-input" class="search" placeholder="Wpisz nazwę marki" />
+            <button class="btn btn-primary" id="search-button">Szukaj</button>
+        </div>
+    </section>
+
+
+
+    <section id="cars" class="cars py-5 bg-light">
+        <h2>Nasze auta</h2>
+        <div class="underline"></div>
+        <div class="container">
+            <div class="cars-wrap row text-center justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/audi a3.jpg" class="img-fluid" id="car-image" alt="zdjęcie Audi A3">
+                    <hr>
+                    <li>Audi A3</li>
+                    <hr>
+                    <p><span>Rok:</span> 2006</p>
+                    <p><span>Przebieg:</span> 252 100 km</p>
+                    <p><span>Moc silnika:</span> 1781 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna + LPG</p>
+                    <p><span>Typ nadwozia:</span> Hatchback</p>
+                    <p class="price-tag">10 000 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/mercedes a.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Mercedesa A Klasy">
+                    <hr>
+                    <li>Mercedes A Klasa</li>
+                    <hr>
+                    <p><span>Rok:</span> 2017</p>
+                    <p><span>Przebieg:</span> 50 000 km</p>
+                    <p><span>Moc silnika:</span> 1595 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna</p>
+                    <p><span>Typ nadwozia:</span> Hatchback</p>
+                    <p class="price-tag">95 000 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/dacia-duster.jpg" class="img-fluid" id="car-image" alt="zdjęcie Daci Duster">
+                    <hr>
+                    <li>Dacia Duster</li>
+                    <hr>
+                    <p><span>Rok:</span> 2019</p>
+                    <p><span>Przebieg:</span> 55 000 km</p>
+                    <p><span>Moc silnika:</span> 999 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna</p>
+                    <p><span>Typ nadwozia:</span> SUV</p>
+                    <p class="price-tag">65 000 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/toyota-gr-yaris-g9815cc85d_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Toyoty Yaris">
+                    <hr>
+                    <li>Toyota Yaris</li>
+                    <hr>
+                    <p><span>Rok:</span> 2020</p>
+                    <p><span>Przebieg:</span> 33 000 km</p>
+                    <p><span>Moc silnika:</span> 1497 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Diesel</p>
+                    <p><span>Typ nadwozia:</span> Hatchback</p>
+                    <p class="price-tag">47 900 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/bmw-x5-g401d96f22_640.jpg" id="car-image" class="img-fluid" alt="zdjęcie BMW">
+                    <hr>
+                    <li>BMW X5</li>
+                    <hr>
+                    <p><span>Rok:</span> 2016</p>
+                    <p><span>Przebieg:</span> 149 000 km</p>
+                    <p><span>Moc silnika:</span> 2993 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna</p>
+                    <p><span>Typ nadwozia:</span> SUV</p>
+                    <p class="price-tag">120 000 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/dacia-sandero-g6caa657a2_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Daci Sandero">
+                    <hr>
+                    <li>Dacia Sandero</li>
+                    <hr>
+                    <p><span>Rok:</span> 2022</p>
+                    <p><span>Przebieg:</span> 16 000 km</p>
+                    <p><span>Moc silnika:</span> 999 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Diesel</p>
+                    <p><span>Typ nadwozia:</span> Crossover</p>
+                    <p class="price-tag">68 000 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/alfa-romeo-ga7b3c7d19_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Alfy Romeo">
+                    <hr>
+                    <li>Alfa Romeo</li>
+                    <hr>
+                    <p><span>Rok:</span> 1999</p>
+                    <p><span>Przebieg:</span> 256 000 km</p>
+                    <p><span>Moc silnika:</span> 1598 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna</p>
+                    <p><span>Typ nadwozia:</span> Coupe</p>
+                    <p class="price-tag">6 900 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/honda-g0c22a4bde_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Hondy Civic">
+                    <hr>
+                    <li>Honda Civic Sport</li>
+                    <hr>
+                    <p><span>Rok:</span> 2018</p>
+                    <p><span>Przebieg:</span> 119 000 km</p>
+                    <p><span>Moc silnika:</span> 1498 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna</p>
+                    <p><span>Typ nadwozia:</span> Hatchback</p>
+                    <p class="price-tag">87 000 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/range-rover-g0730de5e7_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Land Rovera">
+                    <hr>
+                    <li>Land Rover</li>
+                    <hr>
+                    <p><span>Rok:</span> 2021</p>
+                    <p><span>Przebieg:</span> 33 000 km</p>
+                    <p><span>Moc silnika:</span> 2993 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Diesel</p>
+                    <p><span>Typ nadwozia:</span> SUV</p>
+                    <p class="price-tag">198 000 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/mazda-g4d5042de3_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Mazdy 3">
+                    <hr>
+                    <li>Mazda 3</li>
+                    <hr>
+                    <p><span>Rok:</span> 2017</p>
+                    <p><span>Przebieg:</span> 86 000 km</p>
+                    <p><span>Moc silnika:</span> 1497 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Diesel</p>
+                    <p><span>Typ nadwozia:</span> Hatchback</p>
+                    <p class="price-tag">26 900 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/skoda-g7d15016df_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Skody Superb">
+                    <hr>
+                    <li>Skoda Superb</li>
+                    <hr>
+                    <p><span>Rok:</span> 2019</p>
+                    <p><span>Przebieg:</span> 118 000 km</p>
+                    <p><span>Moc silnika:</span> 1498 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna</p>
+                    <p><span>Typ nadwozia:</span> Kombi</p>
+                    <p class="price-tag">101 900 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <img src="./img/cars/fiat-g17d73c3dc_640.jpg" class="img-fluid" id="car-image"
+                        alt="zdjęcie Fiata 500">
+                    <hr>
+                    <li>Fiat 500</li>
+                    <hr>
+                    <p><span>Rok:</span> 2008</p>
+                    <p><span>Przebieg:</span> 167 000 km</p>
+                    <p><span>Moc silnika:</span> 1368 cm3</p>
+                    <p><span>Rodzaj paliwa:</span> Benzyna</p>
+                    <p><span>Typ nadwozia:</span> Hatchback</p>
+                    <p class="price-tag">12 900 PLN</p>
+                    <button class="btn btn-success" onclick="submitForm()">zamawiam</button>
+                </div>
+                <div id="no-results" style="display: none;">ups, chyba mnie nie ma...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opinion" class="opinion py-5">
+
+        <h2>Co o nas mówią:</h2>
+        <div class="underline"></div>
+        <div class="card-group opinion-carousel">
+            <div class="card mx-3">
+                <img src="./img/opinion/alone-gc264a8bb5_640.jpg" class="card-img-top"
+                    alt="zdjęcie kobiety w kręconych włosach">
+                <div class="card-body">
+                    <h5 class="card-title">Anna Z.</h5>
+                    <p class="card-text">Solidna firma, kupiłam od nich auto pół roku temu - szybko, sprawnie, bez
+                        zastrzeżeń. Polecam!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">tydzień temu</small>
+                </div>
+            </div>
+            <div class="card mx-3">
+                <img src="./img/opinion/entrepreneur-g035163a3e_640.jpg" class="card-img-top"
+                    alt="zdjęcie mężczyzny przy laptopie">
+                <div class="card-body">
+                    <h5 class="card-title">Janek G.</h5>
+                    <p class="card-text">Auta sprawne, zgodne ze zdjęciem i opisem, dostępna pełna historia. Oby
+                        więcej
+                        takich salonów.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">tydzień temu</small>
+                </div>
+            </div>
+            <div class="card mx-3">
+                <img src="./img/opinion/expert-g151f3bbb9_640.jpg" class="card-img-top"
+                    alt="zdjęcie mechanika w garażu">
+                <div class="card-body">
+                    <h5 class="card-title">Marian P.</h5>
+                    <p class="card-text">Wszystko cacy, nic nie stuka. Niemiec płakał jak sprzedawał!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">2 tygodnie temu</small>
+                </div>
+            </div>
+            <div class="card mx-3">
+                <img src="./img/opinion/woman-gf8a1989f9_640.jpg" class="card-img-top"
+                    alt="zdjęcie młodej kobiety, która patrzy w obiektyw">
+                <div class="card-body">
+                    <h5 class="card-title">Zosia B.</h5>
+                    <p class="card-text">Ogólnie to nie znam się na autach, zależało mi na czerwonym i taki
+                        znalazłam w
+                        tym sklepie. Jeździ do dziś.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">miesiąc temu</small>
+                </div>
+            </div>
+            <div class="card mx-3">
+                <img src="./img/opinion/happy-gb6987e68a_640.jpg" class="card-img-top"
+                    alt="zdjęcie uśmiechniętego mężczyzny w okluarach przeciwsłonecznych">
+                <div class="card-body">
+                    <h5 class="card-title">Paweł J.</h5>
+                    <p class="card-text">Elegancko, sprawna transakcja, dostawa ekspresowa. O wszystko śmiało pytajcie -
+                        obsługa bardzo pomocna.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">2 miesiące temu</small>
+                </div>
+            </div>
+            <div class="card mx-3">
+                <img src="./img/opinion/disco-ge8a3f5ce7_640.jpg" class="card-img-top"
+                    alt="zdjęcie dyskotekowej kuli w różowych okularach i peruce afro">
+                <div class="card-body">
+                    <h5 class="card-title">Zenon M.</h5>
+                    <p class="card-text">Los chce ze mną grać w pokera, raz mi daje raz zabiera, ja swym nowym autem
+                        jadę w świat.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">3 miesiące temu</small>
+                </div>
+            </div>
+            <div class="card mx-3">
+                <img src="./img/opinion/man-g38c2a12e5_640.jpg" class="card-img-top"
+                    alt="zdjęcie uśmiechniętego mężczyzny z kubkiem kawy">
+                <div class="card-body">
+                    <h5 class="card-title">Szymon K.</h5>
+                    <p class="card-text">Zawsze chciałem mieć takie coś! Właśnie po to, by wozić ją!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">4 miesiące temu</small>
+                </div>
+            </div>
+            <div class="card mx-3">
+                <img src="./img/opinion/young-ga1ceb400c_640.jpg" class="card-img-top"
+                    alt="zdjęcie uśmiechniętej kobiety, trzymającej kciuk w górze">
+                <div class="card-body">
+                    <h5 class="card-title">Marika E.</h5>
+                    <p class="card-text">Lovely services. Not cheap, but worth the price. I recommend</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">pół roku temu</small>
+                </div>
+            </div>
+        </div>
+        <div class="opinion-shadow"></div>
+    </section>
+
+
+    <section id="contact" class="contact py-5">
+        <h2>Kontakt</h2>
+        <div class="underline"></div>
+        <div class="container">
+
+            <div class="row text-center contact-us">
+                <div class="col-sm-6 col-lg-4 contact-item order-1">
+                    <h3>siedziba</h3>
+                    <p>ul. Piękna 0</p>
+                    <p>00-000 Wrocław</p>
+                    <p>+48 000 000 000</p>
+                    <p>mail@gmail.com</p>
+
+                </div>
+                <div class="col-lg-4 order-0 order-lg-1 contact-item">
+                    <h3>social media</h3>
+                    <div class="social-media">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4 contact-item order-1">
+                    <h3>godziny otwarcia</h3>
+                    <p>Pn-Pt: 9:00 - 18:00</p>
+                    <p>Sb: 10:00 - 16:00</p>
+                    <p>Ndz: zakup tylko przez e-sklep</p>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <footer class="bg-dark text-light py-4 text-center">
+        <p class='mb-0'>&copy; 2023 | STARY! Gdzie moja bryka?</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/mainslick.js"></script>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
